@@ -11,8 +11,16 @@
 		DE22545A1541D8FB000F6B9A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE2254591541D8FB000F6B9A /* Foundation.framework */; };
 		DE22545C1541D8FB000F6B9A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE22545B1541D8FB000F6B9A /* CoreGraphics.framework */; };
 		DE2254621541D8FB000F6B9A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DE2254601541D8FB000F6B9A /* InfoPlist.strings */; };
-		DE2254641541D8FB000F6B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DE2254631541D8FB000F6B9A /* main.m */; };
-		DE2254681541D8FB000F6B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DE2254671541D8FB000F6B9A /* AppDelegate.m */; };
+		DE2254681541D8FB000F6B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = DE2254671541D8FB000F6B9A /* AppDelegate.mm */; };
+		DE2254861541D926000F6B9A /* game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DE22546F1541D926000F6B9A /* game.cpp */; };
+		DE2254881541D926000F6B9A /* dumbgl-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DE2254751541D926000F6B9A /* dumbgl-Info.plist */; };
+		DE2254891541D926000F6B9A /* GLView.mm in Sources */ = {isa = PBXBuildFile; fileRef = DE2254781541D926000F6B9A /* GLView.mm */; };
+		DE22548A1541D926000F6B9A /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = DE2254791541D926000F6B9A /* main.mm */; };
+		DE22548B1541D926000F6B9A /* RenderingEngine1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DE22547E1541D926000F6B9A /* RenderingEngine1.cpp */; };
+		DE22548C1541D926000F6B9A /* RenderingEngine2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DE2254801541D926000F6B9A /* RenderingEngine2.cpp */; };
+		DED057CA1542361B006C9393 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DED057C91542361B006C9393 /* QuartzCore.framework */; };
+		DED057CC15423620006C9393 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DED057CB15423620006C9393 /* OpenGLES.framework */; };
+		DED057D2154250F9006C9393 /* sprite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DED057D1154250F9006C9393 /* sprite.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,12 +28,32 @@
 		DE2254571541D8FB000F6B9A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		DE2254591541D8FB000F6B9A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		DE22545B1541D8FB000F6B9A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		DE22545F1541D8FB000F6B9A /* ios-gl-4-Info.plist */ = {isa = PBXFileReference; path = "ios-gl-4-Info.plist"; sourceTree = "<group>"; };
+		DE22545F1541D8FB000F6B9A /* ios-gl-4-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ios-gl-4-Info.plist"; sourceTree = "<group>"; };
 		DE2254611541D8FB000F6B9A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		DE2254631541D8FB000F6B9A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		DE2254651541D8FB000F6B9A /* ios-gl-4-Prefix.pch */ = {isa = PBXFileReference; path = "ios-gl-4-Prefix.pch"; sourceTree = "<group>"; };
-		DE2254661541D8FB000F6B9A /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
-		DE2254671541D8FB000F6B9A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		DE2254651541D8FB000F6B9A /* ios-gl-4-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ios-gl-4-Prefix.pch"; sourceTree = "<group>"; };
+		DE2254661541D8FB000F6B9A /* AppDelegate.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = AppDelegate.hpp; sourceTree = "<group>"; };
+		DE2254671541D8FB000F6B9A /* AppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
+		DE22546F1541D926000F6B9A /* game.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = game.cpp; sourceTree = "<group>"; };
+		DE2254701541D926000F6B9A /* game.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = game.hpp; sourceTree = "<group>"; };
+		DE2254711541D926000F6B9A /* sprite.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = sprite.hpp; sourceTree = "<group>"; };
+		DE2254751541D926000F6B9A /* dumbgl-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "dumbgl-Info.plist"; sourceTree = "<group>"; };
+		DE2254761541D926000F6B9A /* dumbgl-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "dumbgl-Prefix.pch"; sourceTree = "<group>"; };
+		DE2254771541D926000F6B9A /* GLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLView.h; sourceTree = "<group>"; };
+		DE2254781541D926000F6B9A /* GLView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GLView.mm; sourceTree = "<group>"; };
+		DE2254791541D926000F6B9A /* main.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = main.mm; sourceTree = "<group>"; };
+		DE22547B1541D926000F6B9A /* IRenderingEngine.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = IRenderingEngine.hpp; sourceTree = "<group>"; };
+		DE22547C1541D926000F6B9A /* matrix.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = matrix.hpp; sourceTree = "<group>"; };
+		DE22547D1541D926000F6B9A /* quaternion.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = quaternion.hpp; sourceTree = "<group>"; };
+		DE22547E1541D926000F6B9A /* RenderingEngine1.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RenderingEngine1.cpp; sourceTree = "<group>"; };
+		DE22547F1541D926000F6B9A /* RenderingEngine1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RenderingEngine1.h; sourceTree = "<group>"; };
+		DE2254801541D926000F6B9A /* RenderingEngine2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RenderingEngine2.cpp; sourceTree = "<group>"; };
+		DE2254811541D926000F6B9A /* RenderingEngine2.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = RenderingEngine2.hpp; sourceTree = "<group>"; };
+		DE2254831541D926000F6B9A /* blap.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = blap.frag; sourceTree = "<group>"; };
+		DE2254841541D926000F6B9A /* blap.vert */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = blap.vert; sourceTree = "<group>"; };
+		DE2254851541D926000F6B9A /* vector.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = vector.hpp; sourceTree = "<group>"; };
+		DED057C91542361B006C9393 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		DED057CB15423620006C9393 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		DED057D1154250F9006C9393 /* sprite.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = sprite.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +61,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DED057CC15423620006C9393 /* OpenGLES.framework in Frameworks */,
+				DED057CA1542361B006C9393 /* QuartzCore.framework in Frameworks */,
 				DE2254581541D8FB000F6B9A /* UIKit.framework in Frameworks */,
 				DE22545A1541D8FB000F6B9A /* Foundation.framework in Frameworks */,
 				DE22545C1541D8FB000F6B9A /* CoreGraphics.framework in Frameworks */,
@@ -45,6 +75,9 @@
 		DE2254481541D8FB000F6B9A = {
 			isa = PBXGroup;
 			children = (
+				DE2254721541D926000F6B9A /* system */,
+				DE22546E1541D926000F6B9A /* game */,
+				DE22547A1541D926000F6B9A /* video */,
 				DE22545D1541D8FB000F6B9A /* ios-gl-4 */,
 				DE2254561541D8FB000F6B9A /* Frameworks */,
 				DE2254541541D8FB000F6B9A /* Products */,
@@ -62,6 +95,8 @@
 		DE2254561541D8FB000F6B9A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DED057CB15423620006C9393 /* OpenGLES.framework */,
+				DED057C91542361B006C9393 /* QuartzCore.framework */,
 				DE2254571541D8FB000F6B9A /* UIKit.framework */,
 				DE2254591541D8FB000F6B9A /* Foundation.framework */,
 				DE22545B1541D8FB000F6B9A /* CoreGraphics.framework */,
@@ -72,8 +107,8 @@
 		DE22545D1541D8FB000F6B9A /* ios-gl-4 */ = {
 			isa = PBXGroup;
 			children = (
-				DE2254661541D8FB000F6B9A /* AppDelegate.h */,
-				DE2254671541D8FB000F6B9A /* AppDelegate.m */,
+				DE2254661541D8FB000F6B9A /* AppDelegate.hpp */,
+				DE2254671541D8FB000F6B9A /* AppDelegate.mm */,
 				DE22545E1541D8FB000F6B9A /* Supporting Files */,
 			);
 			path = "ios-gl-4";
@@ -84,10 +119,60 @@
 			children = (
 				DE22545F1541D8FB000F6B9A /* ios-gl-4-Info.plist */,
 				DE2254601541D8FB000F6B9A /* InfoPlist.strings */,
-				DE2254631541D8FB000F6B9A /* main.m */,
 				DE2254651541D8FB000F6B9A /* ios-gl-4-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DE22546E1541D926000F6B9A /* game */ = {
+			isa = PBXGroup;
+			children = (
+				DED057D1154250F9006C9393 /* sprite.cpp */,
+				DE22546F1541D926000F6B9A /* game.cpp */,
+				DE2254701541D926000F6B9A /* game.hpp */,
+				DE2254711541D926000F6B9A /* sprite.hpp */,
+			);
+			name = game;
+			path = "ios-gl-4/game";
+			sourceTree = "<group>";
+		};
+		DE2254721541D926000F6B9A /* system */ = {
+			isa = PBXGroup;
+			children = (
+				DE2254751541D926000F6B9A /* dumbgl-Info.plist */,
+				DE2254761541D926000F6B9A /* dumbgl-Prefix.pch */,
+				DE2254771541D926000F6B9A /* GLView.h */,
+				DE2254781541D926000F6B9A /* GLView.mm */,
+				DE2254791541D926000F6B9A /* main.mm */,
+			);
+			name = system;
+			path = "ios-gl-4/system";
+			sourceTree = "<group>";
+		};
+		DE22547A1541D926000F6B9A /* video */ = {
+			isa = PBXGroup;
+			children = (
+				DE22547B1541D926000F6B9A /* IRenderingEngine.hpp */,
+				DE22547C1541D926000F6B9A /* matrix.hpp */,
+				DE22547D1541D926000F6B9A /* quaternion.hpp */,
+				DE22547E1541D926000F6B9A /* RenderingEngine1.cpp */,
+				DE22547F1541D926000F6B9A /* RenderingEngine1.h */,
+				DE2254801541D926000F6B9A /* RenderingEngine2.cpp */,
+				DE2254811541D926000F6B9A /* RenderingEngine2.hpp */,
+				DE2254821541D926000F6B9A /* shaders */,
+				DE2254851541D926000F6B9A /* vector.hpp */,
+			);
+			name = video;
+			path = "ios-gl-4/video";
+			sourceTree = "<group>";
+		};
+		DE2254821541D926000F6B9A /* shaders */ = {
+			isa = PBXGroup;
+			children = (
+				DE2254831541D926000F6B9A /* blap.frag */,
+				DE2254841541D926000F6B9A /* blap.vert */,
+			);
+			path = shaders;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,6 +226,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DE2254621541D8FB000F6B9A /* InfoPlist.strings in Resources */,
+				DE2254881541D926000F6B9A /* dumbgl-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -151,8 +237,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DE2254641541D8FB000F6B9A /* main.m in Sources */,
-				DE2254681541D8FB000F6B9A /* AppDelegate.m in Sources */,
+				DE2254681541D8FB000F6B9A /* AppDelegate.mm in Sources */,
+				DE2254861541D926000F6B9A /* game.cpp in Sources */,
+				DE2254891541D926000F6B9A /* GLView.mm in Sources */,
+				DE22548A1541D926000F6B9A /* main.mm in Sources */,
+				DE22548B1541D926000F6B9A /* RenderingEngine1.cpp in Sources */,
+				DE22548C1541D926000F6B9A /* RenderingEngine2.cpp in Sources */,
+				DED057D2154250F9006C9393 /* sprite.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,7 +267,8 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -191,6 +283,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				"PROVISIONING_PROFILE[sdk=*]" = "";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -202,6 +295,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -211,6 +305,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -220,10 +315,12 @@
 		DE22546C1541D8FB000F6B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ios-gl-4/ios-gl-4-Prefix.pch";
 				INFOPLIST_FILE = "ios-gl-4/ios-gl-4-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -231,10 +328,12 @@
 		DE22546D1541D8FB000F6B9A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ios-gl-4/ios-gl-4-Prefix.pch";
 				INFOPLIST_FILE = "ios-gl-4/ios-gl-4-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -258,6 +357,7 @@
 				DE22546D1541D8FB000F6B9A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
